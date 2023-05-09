@@ -1,0 +1,346 @@
+/* @font-face {
+    src: url(fonts/DMSans-Regular.ttf);
+    font-family: 'DM-Sans';
+} */
+
+:root {
+    --primary-colour: #C4CEDD;
+    --secondary-colour: #E0E6EE;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+/* width */
+ body::-webkit-scrollbar {
+   width: 12px;
+ }
+ 
+ /* Track */
+ body::-webkit-scrollbar-track {
+   background: #f1f1f1; 
+   border-radius: 10px;
+ }
+  
+ /* Handle */
+ body::-webkit-scrollbar-thumb {
+   background: #c2c2c2; 
+   border-radius: 10px;
+   border-right: 2.5px #f1f1f1 solid;
+   border-left: 2.5px #f1f1f1 solid;
+  
+ }
+ 
+ /* Handle on hover */
+ body::-webkit-scrollbar-thumb:hover {
+   background: #696969; 
+ }
+
+ul {
+    list-style-type: none;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+p {
+    margin: 8px 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--primary-colour);
+    padding: 6px;
+    border: none;
+}
+
+.ellipse{
+    position: absolute; 
+    width: 80vw;
+    height: 65vh;
+    left: 10vw;
+    top: 17vh;
+    border-radius: 300px;
+    background: var(--primary-colour);
+    filter: blur(90px);
+    transform: rotate(-6.66deg);
+    z-index: -1;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar.active {
+    background: white;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07);
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar__menu {
+    display: flex;
+}
+
+.navbar__item {
+    padding: 16px;
+    margin: 0 8px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.logo h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--primary-colour);
+    margin: 10px 0;
+}
+
+.logo h1:hover {
+    font-style: italic;
+    color: var(--secondary-colour);
+}
+
+.home__link {
+    text-decoration: underline;
+    color: var(--primary-colour);
+}
+
+.portfolio__link {
+    text-decoration: underline;
+    color: var(--primary-colour);
+}
+
+.aboutme_link {
+    text-decoration: underline;
+    color: var(--primary-colour);
+}
+
+.links {
+    color: black;
+}
+
+.links:hover {
+    color: var(--primary-colour);
+    text-decoration: underline;
+    font-weight: 480;
+}
+
+.emoji__waving {
+    animation: waving-hand 2.5s infinite;
+    transform-origin: 70% 70%;
+}
+
+@keyframes waving-hand{
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(20deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(16deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(12deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+/* 
+    80% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    } */
+}
+
+.introduction {
+    height: 100vh;
+    text-align: center;
+}
+
+.introduction .container {
+    max-width: 1100px;
+}
+
+.introduction__text {
+    padding: 24px;
+}
+
+.introduction h2 {
+    font-size: 300%;
+}
+
+.aboutme {
+    height: 100vh;
+    text-align: left;
+}
+
+.aboutme .container {
+    max-width: 1100px;
+}
+
+.aboutme__text {
+    padding: 24px;
+}
+
+.first__project {
+    background-color: white;
+    height: 100vh;
+}
+
+.first__project h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 64px;
+    margin-bottom: 10px;
+}
+
+.first__project .container {
+    max-width: 1100px;
+    height: 400px;
+}
+
+.text {
+    width: 50%;
+    float: left;
+}
+
+.first__project p{
+    font-family: 'Lora';
+}
+
+.medlife {
+    width: 40%;
+    float: right;
+    margin-top: 64px;
+    /* align-items: center;
+    justify-content: center; */
+    /* border-radius: 16px; */
+    transition: transform 1s;
+}
+
+.medlife:hover {
+    transform: scale(1.08,1.08);
+    box-shadow: 0px 0px 8px 5px rgba(196, 206, 221, 0.6);
+    opacity: 0.95;
+}
+
+.learn_more{
+    margin: 8px 0;
+}
+
+.more.active {
+    opacity: 1;
+}
+
+
+.footer {
+    text-align: center;
+    height: 100px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.social__icons {
+    padding: 10px;
+}
+
+.linkedin__profile:hover {
+    opacity: 0.7;
+}
+
+.email:hover {
+    opacity: 0.7;
+}
+
+.top__btn {
+    position: fixed;
+    right: 32px;
+    bottom: 16px;
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+    transition: all 0.2s;
+}
+
+.top__btn.active {
+    bottom: 32px;
+    pointer-events: auto;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.top__btn.active:hover {
+    opacity: 0.7;
+}
+
+/*Utilities*/
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+}
+
+.fade_in {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
