@@ -286,6 +286,14 @@ button {
     padding: 10px;
 }
 
+.linkedin__profile {
+    padding-right: 2.5px;
+}
+
+.email {
+    padding-left: 2.5px;
+}
+
 .linkedin__profile:hover {
     opacity: 0.7;
 }
