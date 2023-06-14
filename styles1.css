@@ -8,6 +8,7 @@
     --secondary-colour: #E0E6EE;
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -77,6 +78,11 @@ h4 {
     font-size: 28px;
 }
 
+h5 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
 h6 {
     font-style: normal;
     font-family: 'Roboto', sans-serif;
@@ -85,11 +91,9 @@ h6 {
 }
 
 p {
-    margin: 8px 0;
+    margin-top: 8px;
     font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -2%;
-    margin: 12 0;
+    /* letter-spacing: -2%; */
 }
 
 a {
@@ -151,7 +155,7 @@ button {
 
 .logo h4:hover {
     font-style: italic;
-    color: var(--secondary-colour);
+    color: var(--primary-colour);
 }
 
 .home__link, .portfolio__link, .aboutme_link {
@@ -236,39 +240,37 @@ button {
     color: var(--primary-colour);
 }
 
-/* .first__project {
-    height: 100vh;
+.recent__project {
+    height: 60vh;
 }
 
-.first__project h6 {
-    text-transform: uppercase;
-    margin-top: 64px;
-    margin-bottom: 10px;
-}
-
-.first__project .container {
-    max-width: 1100px;
-    height: 400px;
-} */
-
-.text {
-    width: 50%;
-    float: right;
-}
-
-.recent__project h6, p {
+.recent__project h6, .recent__project p {
     margin-left: 5vw;
 }
 
-/* .medlife {
-    width: 40%;
-    float: right;
-    margin-top: 64px;
-    /* align-items: center;
-    justify-content: center; */
+.recent__project .container {
+    height: 70vh;
+    position: relative;
+}
+
+.text {
+    width: 50%;
+}
+
+.project_image {
+    position: absolute;
+    z-index: -1;
+}
+
+.fantuan_case_study {
+    float: left;
+   
+    /* margin-top: 64px; */
+    align-items: center;
+    justify-content: left;
     /* border-radius: 16px; */
-    /* transition: transform 1s; */
-/* } */
+    transition: transform 1s;
+}
 
 /* .medlife:hover {
     transform: scale(1.08,1.08);
@@ -277,21 +279,21 @@ button {
 } */ 
 
 .learn_more{
-
-}
-
-
-.fantuan_case_study {
-    box-shadow: 20px 20px 20px 20px rgb(196, 206, 221);
-}
-
-.more.active {
     opacity: 1;
 }
 
 
+/* .fantuan_case_study {
+    box-shadow: 20px 20px 20px 20px rgb(196, 206, 221);
+} */
+
+/* .learn_more.active {
+    opacity: 1;
+} */
+
 .footer {
     text-align: center;
+    justify-content: center;
     height: 100px;
 }
 
@@ -355,10 +357,15 @@ button {
 }
 
 .left {
-    display: flex;
+    margin-top: 80px;
+    float: left;
     align-items: center;
-    justify-content: left;
-    height: 100%;
+}
+
+.right {
+    margin-top: 80px;
+    float: right;
+    align-items: center;
 }
 
 .box {
