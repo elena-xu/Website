@@ -7,19 +7,17 @@
     <link rel="stylesheet" href="styles1.css"/>
     <!--below generates the favicon, image displayed next to page title in browser tab-->
     <link rel="icon" type="image/x-icon" href="images/favicon.svg" alt="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Montez&family=Noto+Serif:wght@400&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="fade_in">
-        <!-- Background -->
-        <div class="back">
-            <div class="ellipse"></div>
-        </div>
-            
         
         <!-- Navbar -->
         <div class="navbar">
             <div class="container flex">
-                <a href="/index1.html" class="logo"><h1>elena xu</h1></a>
+                <a href="/index.html" class="logo"><h4>EX</h4></a>
                 <nav>
                 <a href="/" class="toggle__button">
                     <span class="bar"></span>
@@ -28,7 +26,7 @@
                 </a>
                     <ul class="navbar__menu">
                         <li class="navbar__item">
-                            <a href="/index1.html" class="links">Home</a>
+                            <a href="index.html" class="links">Home</a>
                         </li>
                         <li class="navbar__item">
                             <a href="/portfolio.html" class="links">Portfolio</a>
@@ -37,7 +35,7 @@
                             <a href="/aboutme.html" class="aboutme_link">About Me</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="/Resume-ElenaXu.pdf" target="_blank" class="links">Resume</a>
+                            <a href="ElenaXuResume1B.pdf" target="_blank" class="resume_link">Resume</a>
                         </li>
                         
                     </ul>
@@ -48,20 +46,34 @@
         <section class="aboutme">
             <div class="container">
                 <div class="aboutme__text">
-                    <h2 class="introtext">Hi, I'm Elena Xu.
+                    <h2 class="intro_text">Hi, I'm Elena Xu.
                         <span><img class="emoji__waving" src="images/emoji_waving.svg" height="40" alt="waving emoji"/></span>
                     </h2>
-                    <p>
+                    <p class="intro_paragraph">
                         I’m a Systems Design Engineering student at the University of Waterloo. I have a strong interest for user experience and user interface design
                         with a focus on developing innovative and meaningful products. Currently seeking fall 2023 and summer 2024 UI/UX design, product design,
                         product management, project management, & similar internship/co-op opportunities! 
                     </p>
                 </div>
-                <div class="headshot"><img class="ex" src="elena_xu" alt="Image of Elena Xu"/></div>
+                <div class="headshot"><img class="ex" src="images/elena_xu_headshot.svg" alt="Image of Elena Xu"/></div>
             </div>
         </section>
-
     </div>
+
+    <div class="footer">
+        <div class="container">
+            <footer>
+                <div class="social__icons">
+                    <a href="https://www.linkedin.com/in/elena-x" target="_blank" class="linkedin__profile"><img src="images/in.svg" alt=""/></a>
+                    <a href="mailto:e3xu@uwaterloo.ca" target="_blank" class="email"><img src="images/mailto.svg" alt=""/></a>
+                </div>
+                <p>&copy; Elena Xu 2023</p>
+            </footer>
+        </div>
+    </div>
+    <button id="scroll__up">
+        <img class="top__btn" src="images/up arrow.svg" alt=""/>
+    </button>
 
     <script src="app.js"></script>
 

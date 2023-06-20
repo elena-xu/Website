@@ -220,40 +220,59 @@ button {
     height: 80vh;
 }
 
-.introduction__text, .aboutme_text{
+.introduction__text, .aboutme__text {
     padding: 0px;
     align-self: flex-start;
-    margin-top: 32vh;
-    margin-right: 25vw;
+    margin-top: 30%;
+    /* margin-right: 25vw; */
+}
+
+.headshot {
+    margin-top: 23%;
+    align-self: center;
 }
 
 .aboutme {
     height: 100vh;
-    text-align: left;
 }
 
 .aboutme .container {
-    max-width: 1100px;
+    display: flex;
 }
 
-.recent__project h6 {
+.intro_paragraph {
+    max-width: 63em;
+    margin-right: 5%;
+}
+
+.project_type, .learn_more {
     color: var(--primary-colour);
 }
 
-.recent__project {
+/* .recent__project, .second_project {
     height: 60vh;
-}
+} */
 
-.recent__project h6, .recent__project p {
+.recent_project h6, .recent_project p {
     margin-left: 5vw;
 }
 
-.recent__project .container {
-    height: 70vh;
+.recent_project .container, .second_project .container {
+    height: 60vh;
+    margin-top: 10%;
     position: relative;
 }
 
-.text {
+.second_project .text {
+    text-align: right;
+}
+
+.second_project h6, .second_project p {
+    margin-right: 5vw;
+}
+
+.text_box {
+    margin-top: 80px;
     width: 50%;
 }
 
@@ -262,14 +281,12 @@ button {
     z-index: -1;
 }
 
-.fantuan_case_study {
-    float: left;
-   
-    /* margin-top: 64px; */
-    align-items: center;
-    justify-content: left;
-    /* border-radius: 16px; */
-    transition: transform 1s;
+.image {
+    justify-content: right;
+}
+
+.ex {
+    max-width: 45vw;
 }
 
 /* .medlife:hover {
@@ -277,11 +294,6 @@ button {
     box-shadow: 0px 0px 8px 5px rgba(196, 206, 221, 0.6);
     opacity: 0.95;
 } */ 
-
-.learn_more{
-    opacity: 1;
-}
-
 
 /* .fantuan_case_study {
     box-shadow: 20px 20px 20px 20px rgb(196, 206, 221);
@@ -357,15 +369,15 @@ button {
 }
 
 .left {
-    margin-top: 80px;
     float: left;
     align-items: center;
+    justify-content: left;
 }
 
 .right {
-    margin-top: 80px;
     float: right;
     align-items: center;
+    justify-content: right;
 }
 
 .box {
